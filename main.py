@@ -34,5 +34,13 @@ print (Calculo)
 peso= (input ("digita tu peso en kg: "))
 estatura = (input ("digita tu estatura en metros: "))
 inc= round(float(peso)/float(estatura)**2,2)
-print("Tu indice de masa corporal es: ",inc)
+print("Tu masa corporal es: ",inc)
+'''
+# Ejercicio 8
+'''
+N= float(input ("digita un numero entero: "))
+M= float(input ("digita otro numero entero: "))
+C=(N//M)
+R=(N%M)
+print("El cociente de tus numeros es:", C, "y el residuo de tus numeros es:" ,R,)
 '''
