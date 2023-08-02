@@ -19,6 +19,13 @@ print(((3+2)/(2*5))**2)
 # Ejercicio 5
 '''
 horas= float(input ("digita el numero de horas trabajadas: "))
-costo= float(input ("digita el costo por hora: "))
-print (horas*costo )
+costo= float(input ("digita el costo de cada hora: "))
+print (horas*costo)
+'''
+# Ejercicio 6  
+'''
+mensaje = "Ingresa el numero entero positivo: "
+n = int(input(mensaje))
+Calculo= (n*(n+1))/2
+print (Calculo)
 '''
