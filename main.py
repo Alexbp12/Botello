@@ -29,3 +29,10 @@ n = int(input(mensaje))
 Calculo= (n*(n+1))/2
 print (Calculo)
 '''
+# Ejercicio 7
+'''
+peso= (input ("digita tu peso en kg: "))
+estatura = (input ("digita tu estatura en metros: "))
+inc= round(float(peso)/float(estatura)**2,2)
+print("Tu indice de masa corporal es: ",inc)
+'''
