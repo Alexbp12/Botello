@@ -44,3 +44,11 @@ C=(N//M)
 R=(N%M)
 print("El cociente de tus numeros es:", C, "y el residuo de tus numeros es:" ,R,)
 '''
+#Ejercicio 9
+'''
+C= float(input ("digita la cantidad a invertir: "))
+I= float(input ("digita el interes anual: "))
+Años= float(input ("digita la cantidad de años: "))
+inc= round (C*(I/100+1)**Años,2)
+print ("El capital obtenido por la inversion seria:", inc)
+'''
