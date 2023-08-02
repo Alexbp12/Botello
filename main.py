@@ -54,3 +54,12 @@ Años= float(input ("digita la cantidad de años: "))
 inc= round (C*(I/100+1)**Años,2)
 print ("El capital obtenido por la inversion seria:", inc)
 '''
+# Ejercicio 10
+'''
+M= float(input ("Ingresa la cantidad de muñecas "))
+P= float(input ("Ingresa la cantidad de payasos "))
+Payaso= 112
+Muñeca= 75
+inc= round((Muñeca*M)+(Payaso*P),2)
+print("El peso total del paquete sera de: ",inc,"g")
+'''
