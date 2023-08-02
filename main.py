@@ -1,6 +1,8 @@
 # Primer codigo python
 # Ejercicio 1:
-#print("Hola Mundo")
+'''
+print("Hola Mundo")
+'''
 # Ejercicio 2:
 ''''
 Lapicero= 'Hola Mundo'
