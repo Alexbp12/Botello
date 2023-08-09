@@ -63,3 +63,18 @@ Muñeca= 75
 inc= round((Muñeca*M)+(Payaso*P),2)
 print("El peso total del paquete sera de: ",inc,"g")
 '''
+# Ejercicio 11
+'''
+Ahorros= float(input ("Ingresa la cantidad de dinero depositado"))
+Interes = 0.04
+Formula=(Ahorros*Interes)
+Año1=round((Ahorros-Formula),2)
+Formula1=(Año1*Interes)
+Año2=round((Año1-Formula1),2)
+Formula2=(Año2*Interes)
+Año3=round((Año2-Formula2),2)
+print("La cantidad de ahorros tras el primer año sera de: ",Año1, 
+"La cantidad de ahorros tras el segundo año sera de: ", Año2,
+"La cantidad de ahorros tras el tercer año sera de: ", Año3) 
+'''
+# Ejercicio 12
