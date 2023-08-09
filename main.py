@@ -88,10 +88,23 @@ print("El precio habitual de", PanesV,"panes es de", Formula1, "pero al no ser d
 '''
 
 # Ejercicio 1
+'''
 N= int(input ("Digita el numero: "))
 Suma=int((N*(N+1)/2))
 if Suma > 20 :
   print ("Es un gran numero!", Suma)
 else:
   print ("El numero es:",Suma)
-
+'''
+# Ejercicio 2 
+N= int(input ("Digita el primer numero: "))
+M= int(input ("Digita el segundo numero: "))
+Division= (N/M)
+C=(N//M)
+R=(N%M)
+if C < 1 :
+  print (" La division entre los dos numeros es:",Division,"El cociente de la division es:",C,"El residuo de la operacion es:",R,"El divisor es mayor al dividendo")
+elif C > 1:
+   print (" La division entre los dos numeros es:",Division,"El cociente de la division es:",C,"El residuo de la operacion es:",R,"El divisor es menor al dividendo")
+else:
+  print (" La division entre los dos numeros es:",Division,"El cociente de la division es:",C,"El residuo de la operacion es:",R,"El divisor y el dividendo son iguales")
