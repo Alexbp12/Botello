@@ -86,3 +86,12 @@ Formula1=(PanesV*Pan)
 Formula2=(Formula1*Descuento)
 print("El precio habitual de", PanesV,"panes es de", Formula1, "pero al no ser del dia tienen un descuento del 40%, por lo que pagarias:", Formula2 )
 '''
+
+# Ejercicio 1
+N= int(input ("Digita el numero: "))
+Suma=int((N*(N+1)/2))
+if Suma > 20 :
+  print ("Es un gran numero!", Suma)
+else:
+  print ("El numero es:",Suma)
+
