@@ -78,3 +78,11 @@ print("La cantidad de ahorros tras el primer año sera de: ",Año1,
 "La cantidad de ahorros tras el tercer año sera de: ", Año3) 
 '''
 # Ejercicio 12
+'''
+PanesV= int(input ("Ingresa el número de panes vendidos que no son del día: "))
+Pan = 3000
+Descuento = 0.4
+Formula1=(PanesV*Pan)
+Formula2=(Formula1*Descuento)
+print("El precio habitual de", PanesV,"panes es de", Formula1, "pero al no ser del dia tienen un descuento del 40%, por lo que pagarias:", Formula2 )
+'''
