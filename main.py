@@ -96,6 +96,7 @@ if Suma > 20 :
 else:
   print ("El numero es:",Suma)
 '''
+'''
 # Ejercicio 2 
 N= int(input ("Digita el primer numero: "))
 M= int(input ("Digita el segundo numero: "))
@@ -108,3 +109,34 @@ elif C > 1:
    print (" La division entre los dos numeros es:",Division,"El cociente de la division es:",C,"El residuo de la operacion es:",R,"El divisor es menor al dividendo")
 else:
   print (" La division entre los dos numeros es:",Division,"El cociente de la division es:",C,"El residuo de la operacion es:",R,"El divisor y el dividendo son iguales")
+'''
+# Ejercicio 3
+'''
+Invertir=int(input ("Ingresa la cantidad a invertir: "))
+Interes= float(input ("Ingresa el interes anual: "))
+Años= int(input ("Ingresa el numero de años: "))
+Formula= (Invertir*((Interes/100)+1)**Años)
+if Formula < 100000:
+  print ("El capital es:",formula,"Baja rentabiidad")
+elif 100000<Formula<1000000:
+  print ("El capital es:",formula,"Rentabilidad baja")
+else: 
+  print ("El capital es:",formula,"Es una buena inversion")
+  '''
+# Ejercicio 4
+M= float(input ("Ingresa la cantidad de muñecas vendidas: "))
+P= float(input ("Ingresa la cantidad de payasos vendidas: "))
+Payaso= 112/1000
+Muñeca= 75/1000
+Kg= (Muñeca*M)+(Payaso*P) 
+if Kg > 3000:
+  answer=input("¿Desea enviar el paquete?")
+  if answer == "si":
+    print ("Contenedor Enviado")
+  elif answer == "no":
+     print ("Contenedor No Enviado")
+  else:
+   print ("Error")
+else:
+   print ("Contenedor Enviado")
+
