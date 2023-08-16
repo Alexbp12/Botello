@@ -155,19 +155,64 @@ def Suma(n1,n2):
   return Operacion
 print (Suma(n1,n2)) 
 '''
+'''
 # Ejercicio 2
 n1=int(input ("Ingresa el primer numero: "))
 n2=int(input ("Ingresa el segundo numero: "))
-def Suma(n1,n2):
+def Resta(n1,n2):
   Operacion= n1-n2
   return Operacion
-print (Suma(n1,n2)) 
+print (Resta(n1,n2)) 
+'''
 '''
 # Ejercicio 3
 n1=int(input ("Ingresa el primer numero: "))
 n2=int(input ("Ingresa el segundo numero: "))
-def Suma(n1,n2):
+def Multiplicacion(n1,n2):
   Operacion= n1*n2
   return Operacion
-print (Suma(n1,n2)) 
+print (Multiplicacion(n1,n2)) 
+'''
+'''
+# Ejercicio 4
+n1=int(input ("Ingresa el primer numero: "))
+n2=int(input ("Ingresa el segundo numero: "))
+if n2==0:
+    print("No se puede dividir por 0, respete")
+else:
+    def Division(n1,n2):
+      Operacion=float(n1/n2)
+      return Operacion
+      
+print (Division(n1,n2)) 
+'''
+#Calculadora
+n1=int(input ("Ingresa el primer numero: "))
+n2=int(input ("Ingresa el segundo numero: "))
+Operacion=str(input("¿Que operacion deseas realizar? "))
+if Operacion == "suma":
+  def Sum(n1,n2):
+    x= n1+n2
+    return x
+  print (Sum(n1,n2)) 
+elif Operacion == "resta":
+  def Rest(n1,n2):
+    x= n1-n2
+    return x 
+  print (Rest(n1,n2)) 
+elif Operacion == "multiplicacion":
+  def Producto(n1,n2):
+    x= n1*n2
+    return x
+  print (Producto(n1,n2))
+elif Operacion == "division":
+  if n2==0:
+    print("No se puede dividir por 0, respete")
+  else:
+    def Division(n1,n2):
+      Operacion=float(n1/n2)
+      return Operacion
+    print (Division(n1,n2)) 
+else:
+   print("ERROR, porfavor ingresa una operacion valida")
 
