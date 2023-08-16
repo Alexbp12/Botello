@@ -146,5 +146,28 @@ else:
 #Ejercicio 5
 = float(input (": "))
 '''
-
+'''
 # Ejercicio 1
+n1=int(input ("Ingresa el primer numero: "))
+n2=int(input ("Ingresa el segundo numero: "))
+def Suma(n1,n2):
+  Operacion= n1+n2
+  return Operacion
+print (Suma(n1,n2)) 
+'''
+# Ejercicio 2
+n1=int(input ("Ingresa el primer numero: "))
+n2=int(input ("Ingresa el segundo numero: "))
+def Suma(n1,n2):
+  Operacion= n1-n2
+  return Operacion
+print (Suma(n1,n2)) 
+'''
+# Ejercicio 3
+n1=int(input ("Ingresa el primer numero: "))
+n2=int(input ("Ingresa el segundo numero: "))
+def Suma(n1,n2):
+  Operacion= n1*n2
+  return Operacion
+print (Suma(n1,n2)) 
+
