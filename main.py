@@ -124,10 +124,12 @@ else:
   print ("El capital es:",formula,"Es una buena inversion")
   '''
 # Ejercicio 4
+'''
 M= float(input ("Ingresa la cantidad de muñecas vendidas: "))
 P= float(input ("Ingresa la cantidad de payasos vendidas: "))
 Payaso= 112/1000
 Muñeca= 75/1000
+answer=()
 Kg= (Muñeca*M)+(Payaso*P) 
 if Kg > 3000:
   answer=input("¿Desea enviar el paquete?")
@@ -139,4 +141,10 @@ if Kg > 3000:
    print ("Error")
 else:
    print ("Contenedor Enviado")
+'''
+'''
+#Ejercicio 5
+= float(input (": "))
+'''
 
+# Ejercicio 1
