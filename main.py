@@ -86,7 +86,7 @@ Formula1=(PanesV*Pan)
 Formula2=(Formula1*Descuento)
 print("El precio habitual de", PanesV,"panes es de", Formula1, "pero al no ser del dia tienen un descuento del 40%, por lo que pagarias:", Formula2 )
 '''
-
+# TEMA CONDICIONALES
 # Ejercicio 1
 '''
 N= int(input ("Digita el numero: "))
@@ -142,12 +142,14 @@ if Kg > 3000:
 else:
    print ("Contenedor Enviado")
 '''
-'''
+
 #Ejercicio 5
+'''
 = float(input (": "))
 '''
-'''
+
 # Ejercicio 1
+'''
 n1=int(input ("Ingresa el primer numero: "))
 n2=int(input ("Ingresa el segundo numero: "))
 def Suma(n1,n2):
@@ -155,8 +157,8 @@ def Suma(n1,n2):
   return Operacion
 print (Suma(n1,n2)) 
 '''
-'''
 # Ejercicio 2
+'''
 n1=int(input ("Ingresa el primer numero: "))
 n2=int(input ("Ingresa el segundo numero: "))
 def Resta(n1,n2):
@@ -164,8 +166,8 @@ def Resta(n1,n2):
   return Operacion
 print (Resta(n1,n2)) 
 '''
-'''
 # Ejercicio 3
+'''
 n1=int(input ("Ingresa el primer numero: "))
 n2=int(input ("Ingresa el segundo numero: "))
 def Multiplicacion(n1,n2):
