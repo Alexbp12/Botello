@@ -189,6 +189,7 @@ else:
 print (Division(n1,n2)) 
 '''
 #Calculadora
+'''
 n1=int(input ("Ingresa el primer numero: "))
 n2=int(input ("Ingresa el segundo numero: "))
 Operacion=str(input("¿Que operacion deseas realizar? "))
@@ -217,4 +218,33 @@ elif Operacion == "division":
     print (Division(n1,n2)) 
 else:
    print("ERROR, porfavor ingresa una operacion valida")
+'''
+
+# Ejercicio inversion 
+'''
+def intereses(inv):
+  d=inv
+  if (d>0 and d<100000):
+    return 2
+  elif (d> 10000000 and d<2000000):
+    return 5
+  else:
+    return 7
+  
+def calbalance(int,inv):
+  n=int
+  d=inv
+  return round(d*(1+(n/100)),2)
+
+def ctaAhorro():
+  inversion=float(input("Ingresa el valor de la inversion: "))
+  interes=intereses(inversion)
+  b1=calbalance(interes,inversion)
+  b2=calbalance(interes,b1)
+  b3=calbalance(interes,b2)
+  print("Balance año 1:" + str(b1) + "Balance año 2" + str(b2) +        "Balance año 3:" + str(b3))
+
+ctaAhorro() 
+'''
+
 
