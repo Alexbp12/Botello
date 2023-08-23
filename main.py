@@ -246,5 +246,65 @@ def ctaAhorro():
 
 ctaAhorro() 
 '''
+#AreasFig
+  
+def Cuad(lado):
+  l=lado
+  area= (l*l)
+  return area
 
+def Trian(bas,alt):
+  b=bas
+  h=alt
+  area=(b*h/2)
+  return area 
+  
+def Circ(rad):
+  r=rad
+  area= (3.14169*(r**2))
+  return area
+
+def Circ(rad):
+  r=rad
+  area= (3.14169*(r**2))
+  return area
+
+def Circ(rad):
+  r=rad
+  area= (3.14169*(r**2))
+  return area
+
+def AreasFig():
+  Figura=str(input("Escribe a que figura se le debe calcular el area: "))
+  
+  if (Figura.lower() == "cuadrado"):
+    Ladito=float(input("Ingresa el lado del cuadrado: "))
+    Cuad(Ladito)
+    print("El area del Cuadrado es:", Cuad(Ladito))
+    
+  elif (Figura.lower() == "triangulo"):
+    base=float(input("Ingresa la base del triangulo: "))
+    altura=float(input("Ingresa la altura del triangulo: "))
+    Trian(base,altura)
+    print("El area del triangulo es:", Trian(base,altura))
+    
+  elif (Figura.lower() == "circulo"):
+    radio=float(input("Ingresa el radio de el circulo: "))
+    Circ(radio)
+    print("El area del circulo es:", Circ(radio))
+
+  elif (Figura.lower() == "pentagono"):
+    radio=float(input("Ingresa el radio de el circulo: "))
+    Circ(radio)
+    print("El area del pentagono es:", )
+
+  elif (Figura.lower() == "rombo"):
+    
+    print("El area del rombo es:", )
+    
+  else:
+    print("**Error** Ingresa una figura valida")
+    
+AreasFig()
+  
 
