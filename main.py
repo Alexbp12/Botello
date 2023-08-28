@@ -264,14 +264,15 @@ def Circ(rad):
   area= (3.14169*(r**2))
   return area
 
-def Circ(rad):
+def Romb(rad):
   r=rad
   area= (3.14169*(r**2))
   return area
 
-def Circ(rad):
-  r=rad
-  area= (3.14169*(r**2))
+def pent(diagma,diagme):
+  y=diagma
+  n=diagme
+  area= ((y*n)/2)
   return area
 
 def AreasFig():
@@ -294,17 +295,21 @@ def AreasFig():
     print("El area del circulo es:", Circ(radio))
 
   elif (Figura.lower() == "pentagono"):
-    radio=float(input("Ingresa el radio de el circulo: "))
-    Circ(radio)
-    print("El area del pentagono es:", )
+    perimetro=float(input("Ingresa el perímetro del pentagono: "))
+    apotema=float(input("Ingresa el apotema del pentagono: "))
+    pent(perimetro,apotema)
+    print("El area del pentagono es:", pent(perimetro,apotema))
 
   elif (Figura.lower() == "rombo"):
-    
-    print("El area del rombo es:", )
+     diagonalmayor=float(input("Ingresa la diagonal mayor del rombo: "))
+     diagonalmenor=float(input("Ingresa la diagonal menor del rombo: "))
+     pent(diagonalmayor,diagonalmenor)
+     print("El area del rombo es:", pent(diagonalmayor,diagonalmenor))
     
   else:
     print("**Error** Ingresa una figura valida")
     
 AreasFig()
-  
+
+#incompleto
 
