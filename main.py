@@ -247,7 +247,7 @@ def ctaAhorro():
 ctaAhorro() 
 '''
 #AreasFig
-  
+'''
 def Cuad(lado):
   l=lado
   area= (l*l)
@@ -310,6 +310,33 @@ def AreasFig():
     print("**Error** Ingresa una figura valida")
     
 AreasFig()
+'''
+#Ejercicio 4
 
-#incompleto
+def Mar(m,b):
+  y=m
+  x=b
+  if y.lower()== "nosy":
+    Desc=(x * (5/100))
+    return Desc
+  else:
+    return 0
+
+
+def Pricipal():
+  Pestereo=float(input("Ingresa el precio del estereo: "))
+  Marca=str(input("Ingresa la marca del estereo: "))
+  
+  if Pestereo >= 2000000:
+    Siniva=(Pestereo*(10/100))
+    Desc=(Pestereo-Siniva)
+    total=((Desc-Mar(Marca,Pestereo))*(20/100))
+    Pago=((Desc-Mar(Marca,Pestereo))+total)
+    print("El total que se pagara por el estereo es de:", Pago)
+  else:
+    Precio= Pestereo
+    total=((Precio-Mar(Marca,Pestereo))*(20/100))
+    Pago=((Precio-Mar(Marca,Pestereo))+total)
+    print("El total que se pagara por el estereo es de:", Pago)
+Pricipal()
 
