@@ -401,11 +401,65 @@ def Principal():
 Principal()
 '''
 #3
+'''
+def celsius(temp,escal):
+  x=temp
+  y=escal
+  if y == "kelvin":
+    Formula= (x-273.15)
+    return Formula
+  elif y == "fahrenheit":
+    Conversion= (x-32)*(5/9)
+    return Conversion
+  else:
+    return "no es valida la conversion"
+    
+def kelvin(temp,escal):
+  x=temp
+  y=escal
+  if y == "fahrenheit":
+    Formula= (x-32)*(5/9)+273.15
+    return Formula
+  elif y == "celsius":
+    Conversion= (x+273.15)
+    return Conversion
+  else:
+    return "no es valida la conversion"
 
+def fahrenheit(temp,escal):
+  x=temp
+  y=escal
+  if y == "kelvin":
+    Formula= (x-273.15)*(9/5)+32
+    return Formula
+  elif y == "celsius":
+    Conversion= (x*(9/5))+32 
+    return Conversion
+  else:
+    return "no es valida la conversion"
 
+def Principal():
+  Temperatura=float(input("Ingresa la temperatura: "))
+  Escala=str(input("Ingresa la escala de la temperatura: "))
+  Conversion=str(input("Ingresa la escala a la cual quieres convertir: "))
+  
+  if Conversion.lower() == "fahrenheit":
+    Temp=fahrenheit(Temperatura,Escala.lower())
+    print("La temperatura equivale a",Temp,"grados",Conversion)
+    
+  elif Conversion.lower() == "celsius":
+    Temp=celsius(Temperatura,Escala.lower())
+    print("La temperatura equivale a",Temp,"grados",Conversion)
+  
+  elif Conversion.lower() == "kelvin":
+    Temp=kelvin(Temperatura,Escala.lower())
+    print("La temperatura equivale a",Temp,"grados",Conversion)
 
+  else: 
+    print("La conversion no es valida")
 
-
+Principal()
+'''           
 #4
 '''
 def Niños(edades):
