@@ -312,7 +312,7 @@ def AreasFig():
 AreasFig()
 '''
 #Ejercicio 4
-
+'''
 def Mar(m,b):
   y=m
   x=b
@@ -339,4 +339,128 @@ def Pricipal():
     Pago=((Precio-Mar(Marca,Pestereo))+total)
     print("El total que se pagara por el estereo es de:", Pago)
 Pricipal()
+'''
+#TALLER
+#1
+'''
+Año=int(input("Ingresa el año: "))
 
+if Año % 4 and Año % 100 != 0 or Año % 400 == 0:
+   print(Año, "es bisisesto")
+else:
+  print(Año, "no es bisisesto")
+'''
+  
+#2
+'''
+def pequeño(alt,pes):
+  x=alt
+  y=pes
+  if x<30:
+    if y<15:
+      return "si"
+    else: 
+      return "no"
+  else:
+    return "no"
+    
+def mediano(alt,pes):
+  a=alt
+  b=pes
+  if a==30 or a<40:
+    if b==15 or b<25:
+      return "si"
+    else: 
+      return "no"
+  else:
+    return "no"
+
+def grande(alt,pes):
+  x=alt
+  y=pes
+  if x==40 or x<=60:
+    if y==25 or y<=45:
+      return "si"
+    else: 
+      return "no"
+  else:
+    return "no"
+
+def Principal():
+  Altura=float(input("Ingresa la altura: "))
+  Peso=float(input("Ingresa el peso: "))
+  if pequeño(Altura,Peso)=="si":
+    print("El perro es un mestizo pequeño")
+  elif mediano(Altura,Peso)=="si":
+    print("El perro es un mestizo mediano")
+  elif grande(Altura,Peso)=="si":
+    print("El perro es un mestizo grande")
+  else:
+    print("El perro no cumple con los tamaños establecidos")
+    
+Principal()
+'''
+#3
+
+
+
+
+
+#4
+'''
+def Niños(edades):
+  x=edades
+  precio=25000
+  if x>=13:
+    descuento=(precio*(15/100))
+    pago=(precio-descuento)
+    return pago
+  else:
+    descuento=(precio*(8/100))
+    pago=(precio-descuento)
+    return pago
+
+def Adultos(edades):
+  x=edades
+  precio=35000
+  if x<30:
+    descuento=(precio*(11/100))
+    pago=(precio-descuento)
+    return pago
+  else:
+    descuento=(precio*(9/100))
+    pago=(precio-descuento)
+    return pago
+
+def Adulto_Mayor(edades):
+  x=edades
+  precio=50000
+  if x>65:
+    descuento=(precio*(40/100))
+    pago=(precio-descuento)
+    return pago
+  else:
+    return pago
+
+def Principal():
+  Nombre=str(input("Ingresa tu nombre: "))
+  Edad=int(input("Ingresa tu edad: "))
+
+  if Edad>=13 and Edad<=17:
+    Pago=Niños(Edad)
+    print(Nombre, "quedas en el grupo de niños.", "El valor del grupo es de $25000 pero al tener",Edad,"años tienes un descuento y pagas",Pago)
+  elif Edad>=18 and Edad<=50:
+    Pago=Adultos(Edad)
+    print(Nombre, "quedas en el grupo de adultos.", "El valor del grupo es de $35000 pero al tener",Edad,"años tienes un descuento y pagas",Pago)
+  elif Edad>=51:
+    Pago=Adulto_Mayor(Edad)
+    if Pago < 50000:
+      print(Nombre, "quedas en el grupo de adulto mayor.", "El valor del grupo es de $50000 pero al tener",Edad ,"años tienes un descuento y pagas",Pago)
+    else:
+      print(Nombre, "quedas en el grupo de adulto mayor.", "El valor del grupo es de $50000.")
+  else:
+    print(Nombre,"Tu edad no es apta para las clases de baile")
+  
+Principal()
+'''
+#5
